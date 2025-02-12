@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { add, remove } from '../redux/Slices/cartSlice'
 
 const Product = ({post}) => {
-    const { cart } = useSelector((state) => state);
+    const cart = useSelector((state) => state.cart);
     const dispatch = useDispatch();
 
     const addToCart = () => {

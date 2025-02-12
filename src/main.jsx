@@ -11,7 +11,7 @@ import { Toaster } from "react-hot-toast";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename="/Ecomzy-Shopping/">
     <Provider store={store}>
       <App />
       <Toaster />
